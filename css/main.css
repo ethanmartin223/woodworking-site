@@ -54,14 +54,14 @@
 .openbtn {
   cursor: pointer;
   background-color: transparent;
-  color: #111;
+  color: #818181;
   padding: 10px 15px;
   border: none;
   font-size: 25px;
 }
 
 .openbtn:hover {
-  color: #444;
+  color: #f1f1f1;
 }
 
 @media screen and (max-height: 450px) {
@@ -88,7 +88,19 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  text-align: center
+  text-align: center;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background: -webkit-linear-gradient(to right top, #2c2828, #3b3839, #4b4a4b, #5c5c5c, #6e6e6e);
+  background: -moz-linear-gradient(to right top, #353941, #31353b, #2d3036, #2a2c30, #26282b);
+  background: -ms-linear-gradient(to right top, #353941, #31353b, #2d3036, #2a2c30, #26282b);
+  background: -o-linear-gradient(to right top, #353941, #31353b, #2d3036, #2a2c30, #26282b);
+  background: linear-gradient(to right top, #353941, #31353b, #2d3036, #2a2c30, #26282b);
+
 }
 
 ::-moz-selection {

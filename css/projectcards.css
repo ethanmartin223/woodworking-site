@@ -15,7 +15,8 @@
 .card {
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  color: #111111;
+  background-color: #1c1c1f;
+  color: #f1f1f1;
 }
 
 .card-image {
@@ -36,6 +37,6 @@
 }
 
 .title {
-  color: grey;
+  color: #818181;
 }
 
