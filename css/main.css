@@ -35,17 +35,34 @@
   margin-left: 50px;
 }
 
+.corner-logo {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#corner-logo.fade-in {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+#corner-logo.fade-out {
+  opacity: 0;
+  transition: opacity .3s;
+}
+
 .openbtn {
-  font-size: 20px;
   cursor: pointer;
-  background-color: #111;
-  color: white;
+  background-color: transparent;
+  color: #111;
   padding: 10px 15px;
   border: none;
+  font-size: 25px;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  color: #444;
 }
 
 @media screen and (max-height: 450px) {
@@ -58,6 +75,7 @@
 #main {
   transition: margin-left .5s;
   padding: 20px;
+  margin: 30px;
 }
 
 /* better normal */
