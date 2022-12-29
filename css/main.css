@@ -1,5 +1,4 @@
 
-
 /* sidebar menu */
 .sidebar {
   height: 100%;
@@ -70,12 +69,18 @@
   .sidebar a {font-size: 18px;}
 }
 
-
 /* main content */
 #main {
   transition: margin-left .5s;
   padding: 20px;
-  margin: 30px;
+  margin: 50px 30px 30px 30px;
+}
+
+.image-text-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
 }
 
 /* better normal */
