@@ -1,44 +1,63 @@
-:root {
-  --header-color: #777e00;
-  --text-color: #030101;
-}
 
-.content-box {
-  overflow-x: hidden;
-}
 
-.sidenav {
+/* sidebar menu */
+.sidebar {
   height: 100%;
-  width: 160px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+.sidebar a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
+  transition: 0.3s;
 }
 
-.sidenav a:hover {
+.sidebar a:hover {
   color: #f1f1f1;
 }
 
-.main {
-  margin-left: 160px;
-  padding: 0px 10px;
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+/* main content */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
 
 /* better normal */
