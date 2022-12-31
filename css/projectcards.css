@@ -9,6 +9,7 @@
   .column {
     width: 100%;
     display: block;
+    margin: 0;
   }
 }
 
@@ -17,6 +18,13 @@
   border-radius: 8px;
   background-color: #1c1c1f;
   color: #f1f1f1;
+  margin: 10px;
+  transition: all .1s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  background-color: #37373b;
 }
 
 .card-image {
